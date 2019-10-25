@@ -1,0 +1,21 @@
+<!--pages/moviedetails/moviedetails.wxml-->
+<view wx:if="{{show}}">
+  <view>
+    <image class="movieimag" src="{{movie.images.small}}"></image>
+  </view>
+  <view class="moivetit">
+    <text>标题：</text>{{movie.title}}</view>
+  <view class="movieaverage">
+    <text>评分：</text>{{movie.rating.average}}</view>
+  <view class="moviedirectors">
+    <text>导演：</text>
+    <text wx:for="{{movie.directors}}" wx:key="index">{{item.name}}</text>
+  </view>
+  <view class="moviecasts">
+    <text>主演：</text>
+    <text wx:for="{{movie.casts}}" wx:key="index">{{item.name}}</text> </view>
+  <view class="moviesummary">
+    <text style="font-size:40rpx">简介：</text>
+    <view>{{movie.summary}}</view>
+  </view>
+</view>

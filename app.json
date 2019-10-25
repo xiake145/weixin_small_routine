@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/movielist/movielist",
+    "pages/moviedetails/moviedetails"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "豆瓣电影",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,23 @@
+<!--pages/movielist/movielist.wxml-->
+<view style="font-size:40rpx;color:#ccc">{{title}}</view>
+
+
+  <view  wx:for="{{subjects}}" wx:key="index">
+    <navigator class="movie_list" url="/pages/moviedetails/moviedetails?id={{item.id}}">
+  <!--   title={{item.title}}&imag={{item.images.small}}&average={{item.rating.average}}&directors={{item.directors}}&casts={{item.casts}} -->
+    <view>
+      <image src="{{item.images.small}}" class="img"></image>
+    </view>
+    <view class="right">
+      <view class="year">
+        <text style="font-size:50rpx"> {{item.title}}</text>
+        <text style="color:red">{{item.rating.average}}</text>
+      </view>
+      <view>
+        <text>{{item.year}}</text> </view>
+
+      <view>导演:
+        <text wx:for="{{item.directors}}" wx:for-item="i" wx:for-index="j" wx:key="j">{{i.name}} </text> </view>
+    </view>
+    </navigator>
+</view>

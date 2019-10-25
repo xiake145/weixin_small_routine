@@ -1,0 +1,41 @@
+/* pages/moviedetails/moviedetails.wxss */
+
+.movieimag {
+  margin: auto;
+  height: 750rpx;
+  width: 550rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.moivetit {
+  padding-top: 40rpx;
+  width: 550rpx;
+  margin: auto;
+}
+
+.moviedirectors {
+  width: 550rpx;
+  margin: auto;
+}
+
+.moviedirectors {
+  margin: auto;
+  width: 550rpx;
+}
+
+.moviecasts {
+  margin: auto;
+  width: 550rpx;
+}
+
+.movieaverage {
+  margin: auto;
+  width: 550rpx;
+}
+
+.moviesummary {
+  margin: auto;
+  padding-top: 40rpx;
+  width: 550rpx;
+}

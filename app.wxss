@@ -8,3 +8,5 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+/* 解决手机左右拖动问题 */
+page{width:100%;overflow: auto} 
